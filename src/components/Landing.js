@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import restaurants from '../sample-restaurants';
 import PropTypes from 'prop-types';
 
-const Landing = (props) => {
+const Landing = ({history}) => {
 //	state = {
 //	display: false,
 //	title: '',
@@ -27,7 +27,7 @@ const Landing = (props) => {
 
     const goToRestaurant = () => {
         console.log('goto restaurant!')
-		props.history.push(`/restaurant/${url}`);
+		history.push(`/restaurant/${url}`);
     };
 
 	return (

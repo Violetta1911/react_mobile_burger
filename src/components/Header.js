@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Header = (props) =>  (
+const Header = ({title}) =>  (
 		<header className='top'>
 			<div className='wrap'>
 				<div className='header-content'>
@@ -11,7 +11,7 @@ const Header = (props) =>  (
 					</div>
 
 					<div className='header-divider'></div>
-					<h1 className='font-effect-fire-animation'>{props.title}</h1>
+					<h1 className='font-effect-fire-animation'>{title}</h1>
 					<h3>
 						<span>
 							Fast delivery hot
