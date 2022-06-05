@@ -81,7 +81,7 @@ class App extends React.Component {
 
 
 	}
-
+// some comment
 	loadSmapleBurgers = () => {
 		this.setState({ burgers: sampleburgers });
 	};
